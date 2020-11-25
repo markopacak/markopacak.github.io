@@ -48,6 +48,19 @@ ul {
     list-style-type: none;
 }
 
+p > i.fas, p > i.fa {
+    margin-right: 7px;
+}
+
+span.tag {
+    display: inline-block;
+    border: solid 1px var(--color-2);
+    color: var(--color-2);
+    border-radius: 10px;
+    padding: 3px 8px;
+    font-size: 14px;
+}
+
 /* ------------------------------------------------------------- */
 /* Header */
 
@@ -74,8 +87,12 @@ header nav li {
 /* ------------------------------------------------------------- */
 /* Main */
 
+main > section {
+    margin: 24px auto;
+}
+
 section.sec-main.grid {
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: minmax(auto, 220px) 2fr;
 }
 
 
@@ -90,11 +107,14 @@ ul.grid.list-clients a {
 
 .list-clients p.location {
     color: var(--color-2);
+    margin-top: 10px;
 }
 
-.list-clients p.location > i {
-    margin-right: 7px;
+.list-clients h3 {
+    color: var(--color-1);
+    margin-bottom: 10px;
 }
+
 
 /* ------------------------------------------------------------- */
 /* Footer */
