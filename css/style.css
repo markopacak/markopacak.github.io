@@ -139,12 +139,20 @@ ul.grid.list-clients > li {
 
 .list-clients .img-ct {
     margin: 12px auto;
+    padding: 8px 0;
 }
 
 .sec-description p {
     color: var(--color-1);
     font-size: 17px;
     line-height: 28px;
+}
+
+.img-ct.client-assetmax {
+    background: var(--color-2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* ------------------------------------------------------------- */
