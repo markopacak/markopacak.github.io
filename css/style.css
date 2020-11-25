@@ -1,0 +1,24 @@
+/* ------------------------------------------------------------- */
+/* General */
+
+html, body {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.ct {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 22px;
+}
+
+/* ------------------------------------------------------------- */
+/* Header */
+
+header {
+    height: 80px;
+    box-sizing: border-box;
+    border-bottom: solid 1px #3c2f2f;
+}
