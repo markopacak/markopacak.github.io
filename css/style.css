@@ -5,6 +5,7 @@
     --color-1: #36454f;
     --color-2: #6e7f80;
     --color-3: #f7f7f7;
+    --color-link: #0000ee;
 
     --font-size-s: 13px;
     --font-size-sm: 14px;
@@ -99,6 +100,10 @@ header nav {
 header nav li {
     display: inline-block;
     margin: 0 9px;
+}
+
+header nav a, header nav a:visited, header nav a:active {
+    color: var(--color-link);
 }
 
 /* ------------------------------------------------------------- */
