@@ -5,13 +5,16 @@
     --color-1: #36454f;
     --color-2: #6e7f80;
     --color-3: #f7f7f7;
+
+    --font-size-s: 13px;
+    --font-size-sm: 14px;
 }
 
 html, body {
     padding: 0;
     margin: 0;
-    width: 100vw;
-    height: 100vh;
+    /* width: 100vw;
+    height: 100vh; */
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -48,17 +51,31 @@ ul {
     list-style-type: none;
 }
 
-p > i.fas, p > i.fa {
+p > i.fas, p > i.fa, a > i.fa, a > i.fas {
     margin-right: 7px;
+}
+
+.tags-ct .tag {
+    margin-bottom: 6px;
 }
 
 span.tag {
     display: inline-block;
     border: solid 1px var(--color-2);
     color: var(--color-2);
-    border-radius: 10px;
-    padding: 3px 8px;
-    font-size: 14px;
+    border-radius: 6px;
+    padding: 1px 8px;
+    font-size: var(--font-size-sm);
+    line-height: initial;
+}
+
+hr {
+    border: solid 1px var(--color-3);
+}
+
+img {
+    color: var(--color-2);
+    font-size: var(--font-size-s);
 }
 
 /* ------------------------------------------------------------- */
@@ -95,9 +112,9 @@ section.sec-main.grid {
     grid-template-columns: minmax(auto, 220px) 2fr;
 }
 
-
 ul.grid.list-clients {
     grid-template-columns: repeat(5, 1fr);
+    column-gap: 10px;
     padding: 0;
 }
 
@@ -105,9 +122,14 @@ ul.grid.list-clients a {
     text-decoration: none;
 }
 
+ul.grid.list-clients > li {
+    box-sizing: border-box;
+}
+
 .list-clients p.location {
     color: var(--color-2);
     margin-top: 10px;
+    font-size: var(--font-size-s);
 }
 
 .list-clients h3 {
@@ -115,6 +137,15 @@ ul.grid.list-clients a {
     margin-bottom: 10px;
 }
 
+.list-clients .img-ct {
+    margin: 12px auto;
+}
+
+.sec-description p {
+    color: var(--color-1);
+    font-size: 17px;
+    line-height: 28px;
+}
 
 /* ------------------------------------------------------------- */
 /* Footer */
@@ -136,6 +167,6 @@ footer h2 {
 }
 
 footer p {
-    font-size: 13px;
+    font-size: var(--font-size-s);
     margin: 8px auto;
 }
