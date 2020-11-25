@@ -5,7 +5,8 @@
     --color-1: #36454f;
     --color-2: #6e7f80;
     --color-3: #f7f7f7;
-    --color-link: #0000ee;
+    --color-4: #dbdee3;
+    --color-link: #334c8c;
 
     --font-size-s: 13px;
     --font-size-sm: 14px;
@@ -60,14 +61,16 @@ p > i.fas, p > i.fa, a > i.fa, a > i.fas {
     margin-bottom: 6px;
 }
 
-span.tag {
+code {
     display: inline-block;
-    border: solid 1px var(--color-2);
-    color: var(--color-2);
-    border-radius: 6px;
-    padding: 1px 8px;
+    background: var(--color-4);
+    color: var(--color-1);
+    border-radius: 2px; 
+    padding: 2px 8px;
     font-size: var(--font-size-sm);
     line-height: initial;
+    font-family: inherit;
+    margin-bottom: 3px;
 }
 
 hr {
@@ -77,6 +80,10 @@ hr {
 img {
     color: var(--color-2);
     font-size: var(--font-size-s);
+}
+
+a, a:visited, a:active {
+    color: var(--color-link);
 }
 
 /* ------------------------------------------------------------- */
@@ -100,10 +107,6 @@ header nav {
 header nav li {
     display: inline-block;
     margin: 0 9px;
-}
-
-header nav a, header nav a:visited, header nav a:active {
-    color: var(--color-link);
 }
 
 /* ------------------------------------------------------------- */
@@ -143,7 +146,7 @@ ul.grid.list-clients > li {
 }
 
 .list-clients .img-ct {
-    margin: 12px auto;
+    margin: 16px auto;
     padding: 8px 0;
 }
 
