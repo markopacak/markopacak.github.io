@@ -151,7 +151,7 @@ section.sec-main.grid {
 }
 
 ul.grid.list-clients {
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     justify-items: center;
     column-gap: 18px;
     padding: 0;
@@ -160,7 +160,7 @@ ul.grid.list-clients {
 @media screen and (max-width: 860px) { 
     ul.grid.list-clients {
         grid-template-columns: repeat(2, 1fr);
-        grid-template-columns: repeat(3, auto);
+        grid-template-columns: repeat(2, auto);
         row-gap: 20px;
     }
 }
