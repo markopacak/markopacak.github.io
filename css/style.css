@@ -150,43 +150,43 @@ section.sec-main.grid {
     margin-bottom: 36px;
 }
 
-ul.grid.list-clients {
-    grid-template-columns: repeat(4, 1fr);
+ul.grid.list-work {
+    grid-template-columns: repeat(5, 1fr);
     justify-items: center;
     column-gap: 18px;
     padding: 0;
 }
 
 @media screen and (max-width: 860px) { 
-    ul.grid.list-clients {
+    ul.grid.list-work {
         grid-template-columns: repeat(2, 1fr);
         grid-template-columns: repeat(2, auto);
         row-gap: 20px;
     }
 }
 
-ul.grid.list-clients a {
+ul.grid.list-work a {
     text-decoration: none;
 }
 
-ul.grid.list-clients > li {
+ul.grid.list-work > li {
     box-sizing: border-box;
     max-width: 220px;
 }
 
 
-.list-clients p.location {
+.list-work p.location {
     color: var(--color-2);
     margin-top: 10px;
     font-size: var(--font-size-s);
 }
 
-.list-clients h3 {
+.list-work h3 {
     color: var(--color-1);
     margin-bottom: 10px;
 }
 
-.list-clients .img-ct {
+.list-work .img-ct {
     margin: 16px auto;
     padding: 8px 0;
 }
